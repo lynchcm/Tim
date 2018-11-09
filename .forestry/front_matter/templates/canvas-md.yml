@@ -24,7 +24,7 @@ fields:
   hidden: false
   default: ''
 - type: file
-  name: mediumImg2
+  name: mediumImg
   label: Image to show which medium this is for
 pages:
 - content/gallery/paper.md
