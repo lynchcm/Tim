@@ -1,6 +1,6 @@
 {{ partial "head.html" . }}
 {{ .Content }}
-{{ range where .Pages "Params.type" "artwork" }}
+{{ range where (.Pages.ByParam "order") "Params.type" "artwork" }}
         <div>
             <img src="{{ .Params.artworkImg }}">
             <h3>{{ .Params.artworkTitle }}</h3>
