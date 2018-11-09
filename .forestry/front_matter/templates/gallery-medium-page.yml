@@ -23,5 +23,8 @@ fields:
 - type: text
   name: artworkSize
   label: Artwork size
+- type: text
+  name: order
+  label: Order
 pages:
 - content/gallery/board/_index.md
