@@ -1,9 +1,11 @@
 {{ partial "head.html" . }}
 {{ .Content }}
 {{ range where .Pages "Params.type" "medium" }}
-        <div>
-            <img src="{{ .Params.mediumImg }}">
-            <h3>{{ .Params.medium }}</h3>
-        </div>
+        <a href="">
+            <div>
+                <img src="{{ .Params.mediumImg }}">
+                <h3>{{ .Params.medium }}</h3>
+            </div>
+        </a>
 {{ end }}
 {{ partial "footer.html" . }}
