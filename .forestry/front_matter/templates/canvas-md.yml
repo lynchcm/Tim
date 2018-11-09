@@ -28,3 +28,6 @@ fields:
   type: text
   hidden: false
   default: ''
+- type: file
+  name: mediumImg2
+  label: Image to show which medium this is for
