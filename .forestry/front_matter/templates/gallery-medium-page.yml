@@ -1,0 +1,25 @@
+---
+label: Gallery-Medium Page
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  hidden: true
+  label: Layout template
+  name: layout
+- type: text
+  name: type
+  label: Parameter for Hugo to search by
+  hidden: true
+- type: text
+  name: artworkTitle
+  label: Artwork title
+- type: text
+  name: artworkDate
+  label: Artwork date
+- type: text
+  name: artworkMedium
+  label: Artwork medium
+- type: text
+  name: artworkSize
+  label: Artwork size
