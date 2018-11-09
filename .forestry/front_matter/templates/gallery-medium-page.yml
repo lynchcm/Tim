@@ -1,12 +1,8 @@
 ---
-label: Gallery-Medium Page
+label: Artwork
 hide_body: false
 is_partial: false
 fields:
-- type: text
-  hidden: true
-  label: Layout template
-  name: layout
 - type: text
   name: type
   label: Parameter for Hugo to search by
@@ -26,5 +22,8 @@ fields:
 - type: text
   name: order
   label: Order
+- type: file
+  name: artworkImg
+  label: Artwork
 pages:
 - content/gallery/board/_index.md
