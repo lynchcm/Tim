@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 {{ .Content }}
 {{ range where .Pages "Params.type" "medium" }}
-        <a href="">
+        <a href="/gallery/{{lower .Params.medium }}">
             <div>
                 <img src="{{ .Params.mediumImg }}">
                 <h3>{{ .Params.medium }}</h3>

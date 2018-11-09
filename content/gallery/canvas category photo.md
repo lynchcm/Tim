@@ -1,5 +1,5 @@
 +++
-medium = "Canvas"
+medium = "canvas"
 mediumImg = "/images/canvas.jpeg"
 mediumImg2 = ""
 order = 2
