@@ -27,5 +27,6 @@ fields:
   name: mediumImg2
   label: Image to show which medium this is for
 pages:
+- content/gallery/paper.md
 - content/gallery/board.md
 - content/gallery/canvas.md
