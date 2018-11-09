@@ -25,5 +25,9 @@ fields:
 - type: file
   name: artworkImg
   label: Artwork
+- type: text
+  name: sitemap_exclude
+  label: Exclude from sitemap
+  hidden: true
 pages:
 - content/gallery/board/artwork1.md
