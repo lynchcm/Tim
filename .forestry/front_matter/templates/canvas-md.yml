@@ -1,0 +1,30 @@
+---
+label: canvas.md
+hide_body: 
+is_partial: 
+fields:
+- name: sitemap_exclude
+  label: Sitemap exclude
+  type: boolean
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: ''
+- name: order
+  label: Order
+  type: text
+  hidden: false
+  default: ''
+- name: medium
+  label: Medium
+  type: text
+  hidden: false
+  default: ''
+- name: mediumImg
+  label: Mediumimg
+  type: text
+  hidden: false
+  default: ''
