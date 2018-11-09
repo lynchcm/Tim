@@ -32,6 +32,7 @@ fields:
   hidden: true
   default: 'true'
 pages:
+- content/gallery/canvas/artwork3.md
 - content/gallery/canvas/artwork2.md
 - content/gallery/canvas/artwork1.md
 - content/gallery/paper/artwork3.md
