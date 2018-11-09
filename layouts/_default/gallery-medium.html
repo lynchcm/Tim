@@ -1,0 +1,12 @@
+{{ partial "head.html" . }}
+{{ .Content }}
+{{ range where .Pages "Params.type" "artwork" }}
+        <div>
+            <img src="{{ .Params.artworkImg }}">
+            <h3>{{ .Params.artworkTitle }}</h3>
+            <h3>{{ .Params.artworkDate }}</h3>
+            <h3>{{ .Params.artworkMedium }}</h3>
+            <h3>{{ .Params.artworkSize }}</h3>
+        </div>
+{{ end }}
+{{ partial "footer.html" . }}
