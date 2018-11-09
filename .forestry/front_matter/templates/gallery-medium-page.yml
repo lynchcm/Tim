@@ -26,4 +26,4 @@ fields:
   name: artworkImg
   label: Artwork
 pages:
-- content/gallery/board/_index.md
+- content/gallery/board/artwork1.md
