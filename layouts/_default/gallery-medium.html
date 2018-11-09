@@ -5,7 +5,7 @@
             <img src="{{ .Params.artworkImg }}">
             <h3>{{ .Params.artworkTitle }}</h3>
             <h3>{{ .Params.artworkDate }}</h3>
-            <h3>{{ .Params.artworkMedium }}</h3>
+            <h3>{{humanize .Params.artworkMedium }}</h3>
             <h3>{{ .Params.artworkSize }}</h3>
         </div>
 {{ end }}

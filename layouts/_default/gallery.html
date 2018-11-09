@@ -4,7 +4,7 @@
         <a href="/gallery/{{lower .Params.medium }}">
             <div>
                 <img src="{{ .Params.mediumImg }}">
-                <h3>{{ .Params.medium }}</h3>
+                <h3>{{humanize .Params.medium }}</h3>
             </div>
         </a>
 {{ end }}
