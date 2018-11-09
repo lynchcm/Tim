@@ -11,6 +11,7 @@ fields:
 - type: text
   name: artworkTitle
   label: Artwork title
+  description: e.g. Falling into Autumn
 - type: text
   name: artworkDate
   label: Artwork date
