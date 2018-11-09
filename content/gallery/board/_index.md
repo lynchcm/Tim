@@ -5,7 +5,7 @@ artworkMedium = "Oil on Canvas"
 artworkSize = "40 x 40 cm"
 artworkTitle = "Serendipity"
 layout = "gallery-medium"
-order = 1
+order = "01"
 type = "artwork"
 
 +++
