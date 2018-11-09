@@ -26,10 +26,6 @@ fields:
 - type: file
   name: mediumImg
   label: Image to show which medium this is for
-- type: text
-  name: mediumGalleryLink
-  label: Link to gallery
-  hidden: true
 pages:
 - content/gallery/board category photo.md
 - content/gallery/paper category photo.md
