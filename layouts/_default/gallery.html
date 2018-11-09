@@ -1,0 +1,9 @@
+{{ partial "head.html" . }}
+{{ .Content }}
+{{ range where .Pages "Params.type" "medium" }}
+        <div>
+            <img src="{{ .Params.mediumImg }}">
+            <h3>{{ .Params.medium }}</h3>
+        </div>
+{{ end }}
+{{ partial "footer.html" . }}
