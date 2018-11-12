@@ -1,0 +1,6 @@
+.capitals {
+  text-transform: uppercase; }
+
+#menu-div ul {
+  list-style-type: none;
+  color: red; }

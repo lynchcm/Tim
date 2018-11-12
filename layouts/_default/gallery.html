@@ -1,11 +1,14 @@
 {{ partial "head.html" . }}
-{{ .Content }}
-{{ range where .Pages "Params.type" "medium" }}
+{{ partial "timball-hr.html" . }}
+    <div class="gallery-medium-container">
+{{ range where .Pages ".Params.type" "medium" }}
         <a href="/gallery/{{lower .Params.medium }}">
-            <div>
+            <div class="gallery-medium-div">
+                <div class="hover-grey-overlay"></div>
+                <h3 class="capitals">{{humanize .Params.medium }}</h3>
                 <img src="{{ .Params.mediumImg }}">
-                <h3>{{humanize .Params.medium }}</h3>
             </div>
         </a>
 {{ end }}
+    </div>
 {{ partial "footer.html" . }}

@@ -5,9 +5,37 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        {{ $sass := resources.Get "style.scss" }}
+        {{ $options := (dict "outputStyle" "compressed") }}
+        {{ $style := $sass | resources.ToCSS $options }}
+        <link rel="stylesheet" type="text/css" href="{{ $style.Permalink }}">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
         
         <title>{{ .Title }}</title>
         
     </head>
     <body>
+        <ul id="menu" class="capitals">
+            {{- $title := .Params.menutitle -}}
+            {{ range where ($.Site.Pages.ByParam "menuorder") "Params.menuitem" "true" }}
+            <a href="{{ .Permalink }}">
+                <li{{ if in $title .Params.menutitle }} class="active"{{ end }}>{{ .Params.menutitle }}</li>
+            </a>
+            {{- end }}
+        </ul>
+        <div class="burger-buttons">
+            <a href="#menu" class="open-menu">
+                <div class="menu-burger">
+                    <div class="burger-line" id="burger-line-1">{{ partial "menu-line.svg" . }}</div>
+                    <div class="burger-line" id="burger-line-2">{{ partial "menu-line.svg" . }}</div>
+                    <div class="burger-line" id="burger-line-3">{{ partial "menu-line.svg" . }}</div>
+                </div>
+            </a>
+            <a href="#" class="close-menu">
+                <div class="menu-burger"></div>
+            </a>
+        </div>
+            
+        

@@ -1,12 +1,23 @@
 {{ partial "head.html" . }}
-{{ .Content }}
+{{ partial "timball-hr.html" . }}
+{{ partial "gallery-menu.html" . }}
+    <div class="gallery-artwork-container">
+{{ $.Scratch.Set "counter" 0 }}
 {{ range where (.Pages.ByParam "order") "Params.type" "artwork" }}
-        <div>
-            <img src="{{ .Params.artworkImg }}">
+        <div class="gallery-artwork-div">
+            <img id='image-{{ $.Scratch.Get "counter" }}' src="{{ .Params.artworkImg }}" class="gallery-image">
             <h3>{{ .Params.artworkTitle }}</h3>
             <h3>{{ .Params.artworkDate }}</h3>
             <h3>{{humanize .Params.artworkMedium }}</h3>
             <h3>{{ .Params.artworkSize }}</h3>
         </div>
+{{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
 {{ end }}
+    </div>
+    <div id="image-viewer">
+        <div id="close-image-viewer">&times;</div>
+        <div id="image-container">
+            <img id="img-large-view" src="/images/stickman4.png">
+        </div>
+    </div>
 {{ partial "footer.html" . }}

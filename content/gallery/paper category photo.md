@@ -1,7 +1,6 @@
 +++
 medium = "Paper"
-mediumImg = "/images/paper.jpeg"
-mediumImg2 = "/images/paper.jpeg"
+mediumImg = "/images/paper.png"
 order = 3
 sitemap_exclude = true
 type = "medium"
