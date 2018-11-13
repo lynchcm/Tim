@@ -6,10 +6,10 @@
 {{ range where (.Pages.ByParam "order") "Params.type" "artwork" }}
         <div class="gallery-artwork-div">
             <img id='image-{{ $.Scratch.Get "counter" }}' src="{{ .Params.artworkImg }}" class="gallery-image">
-            <h3>{{ .Params.artworkTitle }}</h3>
-            <h3>{{ .Params.artworkDate }}</h3>
-            <h3>{{humanize .Params.artworkMedium }}</h3>
-            <h3>{{ .Params.artworkSize }}</h3>
+            <h3 id='title-{{ $.Scratch.Get "counter" }}'>{{ .Params.artworkTitle }}</h3>
+            <h3 id='date-{{ $.Scratch.Get "counter" }}'>{{ .Params.artworkDate }}</h3>
+            <h3 id='medium-{{ $.Scratch.Get "counter" }}'>{{humanize .Params.artworkMedium }}</h3>
+            <h3 id='size-{{ $.Scratch.Get "counter" }}'>{{ .Params.artworkSize }}</h3>
         </div>
 {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
 {{ end }}
@@ -18,6 +18,20 @@
         <div id="close-image-viewer">&times;</div>
         <div id="image-container">
             <img id="img-large-view" src="/images/stickman4.png">
+        </div>
+        <div id="scroll-controls-container">
+            <div class="scroll-control" id="scroll-left">
+                {{ partial "scroll.svg" . }}
+            </div>
+            <div class="scroll-control" id="scroll-right">
+                {{ partial "scroll.svg" . }}
+            </div>
+        </div>
+        <div id="caption-container">
+            <h3 id="artwork-title">Title</h3>
+            <h3 id="artwork-date">Date</h3>
+            <h3 id="artwork-medium">Medium</h3>
+            <h3 id="artwork-size">Size</h3>
         </div>
     </div>
 {{ partial "footer.html" . }}

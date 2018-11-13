@@ -1,13 +1,107 @@
         <!-- SnapWidget -->
 <!--<iframe src="https://snapwidget.com/embed/621281" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:480px; height:160px"></iframe>-->
         <script>
-            $('.gallery-image').on('click touch', function() {
-                $('#image-viewer').show();
-                alert(event.target.id);
+            $(function () {
+                
+                var touchscreenDevice = false;
+                window.addEventListener('touchstart', function() {
+                  touchscreenDevice = true;
+                });
+                
+                var imgNum;
+                var imgArray = [];
+                titleArray = [];
+                dateArray = [];
+                mediumArray = [];
+                sizeArray = [];
+                var imgSrcString;
+                var i = 0;
+                var j = 0;
+                while (i == 0) {
+                    if ($('#image-' + j).length) {
+                        imgArray[j] = 'image-' + j;
+                        titleArray[j] = $('#title-' + j).html();
+                        dateArray[j] = $('#date-' + j).html();
+                        mediumArray[j] = $('#medium-' + j).html();
+                        sizeArray[j] = $('#size-' + j).html();
+                        j++;
+                    } else {
+                        i++;
+                    }
+                }
+                
+//                console.log(imgArray);
+//                console.log(titleArray);
+//                console.log(dateArray);
+//                console.log(mediumArray);
+//                console.log(sizeArray);
+                
+                $('.gallery-image').on('click touch', function() {
+                    imgNum = event.target.id;
+                    imgSrcString = $('#' + imgNum).attr('src');
+                    $('#img-large-view').attr('src', imgSrcString);
+                    if (touchscreenDevice == true) {
+                        alert("touchy");
+                        $('#scroll-controls-container').hide();
+                    }
+                    $('#image-viewer').show();
+                    for (var i = 0; i < imgArray.length; i++) {
+                        if (imgArray[i] == imgNum) {
+                            imgNum = i;
+                        }
+                    }
+                    writeCaptionInfo(imgNum);
+                    var e;
+//                    swipeControls(e);
+                });
+
+                $('#scroll-left').on('click touch', function() {
+                    if (imgNum == 0) {
+                        imgNum = imgArray.length - 1;
+                    } else {
+                        imgNum--;
+                    }
+                    imgSrcString = $('#' + imgArray[imgNum]).attr('src');
+                    $('#img-large-view').attr('src', imgSrcString);
+                    writeCaptionInfo(imgNum);
+                });
+                
+                $('#scroll-right').on('click touch', function() {
+                    if (imgNum == imgArray.length - 1) {
+                        imgNum = 0;
+                    } else {
+                        imgNum++;
+                    }
+                    imgSrcString = $('#' + imgArray[imgNum]).attr('src');
+                    $('#img-large-view').attr('src', imgSrcString);
+                    writeCaptionInfo(imgNum);
+                });
+
+                $('#close-image-viewer').on('click touch', function() {
+                    $('#image-viewer').hide();
+                });
             });
-            $('#close-image-viewer').on('click touch', function() {
-                $('#image-viewer').hide();
+            
+            function writeCaptionInfo(i) {
+                $('#artwork-title').html(titleArray[i]);
+                $('#artwork-date').html(dateArray[i]);
+                $('#artwork-medium').html(mediumArray[i]);
+                $('#artwork-size').html(sizeArray[i]);
+            }
+            
+//            function swipeControls(e) {
+            var clientX;
+                window.addEventListener('touchstart', function(e) {
+//                    console.log(e.changedTouches);
+//                    alert(e.changedTouches[0]);
+                    clientX = e.touches[0].clientX;
+                });
+            
+            window.addEventListener('touchstart', function(e) {
+                var deltaX = e.changedTouches[0].clientX - clientX;
+                alert(deltaX);
             });
+//            }
             
         </script>
     </body>
