@@ -83,6 +83,7 @@
                         $('#scroll-controls-container').hide();
                     }
                     $('#image-viewer').show();
+                    $('body').css('overflow', 'hidden');
                     for (var i = 0; i < imgArray.length; i++) {
                         if (imgArray[i] == imgNum) {
                             imgNum = i;
@@ -101,6 +102,7 @@
 
                 $('#close-image-viewer').on('click touch', function() {
                     $('#image-viewer').hide();
+                    $('body').css('overflow', 'visible');
                 });
                 
                 function scrollLeft() {
@@ -139,10 +141,10 @@
 
                 window.addEventListener('touchend', function(e) {
                     var deltaX = e.changedTouches[0].clientX - clientX;
-                    if (deltaX > 50) {
+                    if (deltaX > 30) {
                         scrollLeft();
                     }
-                    if (deltaX < -50) {
+                    if (deltaX < -30) {
                         scrollRight();
                     }
                 });
