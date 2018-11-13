@@ -17,25 +17,31 @@
         
     </head>
     <body>
-        <ul id="menu" class="capitals">
-            {{- $title := .Params.menutitle -}}
-            {{ range where ($.Site.Pages.ByParam "menuorder") "Params.menuitem" "true" }}
-            <a href="{{ .Permalink }}">
-                <li{{ if in $title .Params.menutitle }} class="active"{{ end }}>{{ .Params.menutitle }}</li>
-            </a>
-            {{- end }}
-        </ul>
-        <div class="burger-buttons">
-            <a href="#menu" class="open-menu">
-                <div class="menu-burger">
-                    <div class="burger-line" id="burger-line-1">{{ partial "menu-line.svg" . }}</div>
-                    <div class="burger-line" id="burger-line-2">{{ partial "menu-line.svg" . }}</div>
-                    <div class="burger-line" id="burger-line-3">{{ partial "menu-line.svg" . }}</div>
-                </div>
-            </a>
-            <a href="#" class="close-menu">
-                <div class="menu-burger"></div>
-            </a>
+        
+        {{ if eq .Title "Tim Ball Paintings" }}
+        <div id="homepage-menu">
+        {{ end }}
+            <ul id="menu" class="capitals">
+                {{- $title := .Params.menutitle -}}
+                {{ range where ($.Site.Pages.ByParam "menuorder") "Params.menuitem" "true" }}
+                <a href="{{ .Permalink }}">
+                    <li{{ if in $title .Params.menutitle }} class="active"{{ end }}>{{ .Params.menutitle }}</li>
+                </a>
+                {{- end }}
+            </ul>
+            <div class="burger-buttons">
+                <a href="#menu" class="open-menu">
+                    <div class="menu-burger">
+                        <div class="burger-line" id="burger-line-1">{{ partial "menu-line.svg" . }}</div>
+                        <div class="burger-line" id="burger-line-2">{{ partial "menu-line.svg" . }}</div>
+                        <div class="burger-line" id="burger-line-3">{{ partial "menu-line.svg" . }}</div>
+                    </div>
+                </a>
+                <a href="#" class="close-menu">
+                    <div class="menu-burger"></div>
+                </a>
+            </div>
+        {{ if eq .Title "Tim Ball Paintings" }}
         </div>
-            
+        {{ end }}
         

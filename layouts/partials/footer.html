@@ -3,6 +3,51 @@
         <script>
             $(function () {
                 
+                {{- if eq .Title "Tim Ball Paintings" }}
+                
+                var coverImgArray = [];
+                var k = 0;
+                var m = 1;
+                while (k == 0) {
+                    if ($('#homepage-img' + m).length) {
+                        coverImgArray[m-1] = $('#homepage-img' + m).attr('src');
+//                        alert(coverImgArray[m-1]);
+                        m++;
+                    } else {
+                        k++;
+                    }
+                }
+                var imgSwitch = 0;
+                var imgArrayCounter = imgIndex = 0;
+                setInterval(function() {
+                    imgIndex = imgArrayCounter % coverImgArray.length;
+                    if (imgSwitch % 2 == 0) {
+                        $('#homepage-img2').attr('src', coverImgArray[imgIndex]);
+                        $('#homepage-img2').css('opacity', 0);
+                        $('#homepage-img2').css('z-index', 3);
+                        $('#homepage-img2').animate({
+                            opacity: 1}, 2000, function() {
+                            $('#homepage-img1').css('z-index', 1);
+                            $('#homepage-img2').css('z-index', 2);
+                        });
+                    }
+                    if (imgSwitch % 2 == 1) {
+                        $('#homepage-img1').attr('src', coverImgArray[imgIndex]);
+                        $('#homepage-img1').css('opacity', 0);
+                        $('#homepage-img1').css('z-index', 3);
+                        $('#homepage-img1').animate({
+                            opacity: 1}, 2000, function() {
+                            $('#homepage-img2').css('z-index', 1);
+                            $('#homepage-img1').css('z-index', 2);
+                        });
+                    }
+                    imgSwitch++;
+                    imgArrayCounter++;
+                }, 4000);
+                
+                $('#homepage-img2').css('src', 'homepage-img2.png')
+                {{ end }}
+                
                 var touchscreenDevice = false;
                 window.addEventListener('touchstart', function() {
                   touchscreenDevice = true;
@@ -21,7 +66,7 @@
                     if ($('#image-' + j).length) {
                         imgArray[j] = 'image-' + j;
                         titleArray[j] = $('#title-' + j).html();
-                        dateArray[j] = $('#date-' + j).html();
+//                        dateArray[j] = $('#date-' + j).html();
                         mediumArray[j] = $('#medium-' + j).html();
                         sizeArray[j] = $('#size-' + j).html();
                         j++;
@@ -82,7 +127,7 @@
             
                 function writeCaptionInfo(i) {
                     $('#artwork-title').html(titleArray[i]);
-                    $('#artwork-date').html(dateArray[i]);
+//                    $('#artwork-date').html(dateArray[i]);
                     $('#artwork-medium').html(mediumArray[i]);
                     $('#artwork-size').html(sizeArray[i]);
                 }

@@ -1,4 +1,19 @@
 {{ partial "head.html" . }}
-{{ .Content }}
+{{ partial "timball-hr.html" . }}
+        <form action="https://formspree.io/lynch.cm@gmail.com" method="POST">
+            <div class="form-label">
+                <label>NAME</label>
+                <label>EMAIL</label>
+                <label>MESSAGE</label>
+            </div>
+            <div class="form-input">
+                <input type="text" name="name">
+                <input type="email" name="email">
+                <textarea rows="5" name="message"></textarea>
+                <button type="sumbit">SEND</button>
+                <input type="hidden" name="_next" value="https://timballpaintings.com/thankyou">
+            </div>
+        </form>
+
 {{ partial "footer.html" . }}
 
