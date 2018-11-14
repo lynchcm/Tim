@@ -69,6 +69,7 @@ hr {
     
     li {
         font-size: 36px;
+        margin-left: 20%;
     }
     
     a {
@@ -100,12 +101,20 @@ hr {
             padding: 0 20px;
             float: left;
             font-size: 16px;
+            margin: 0;
         }
     }
 }
 
 #homepage-menu {
+    height: 100vh;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+//    background-color: red;
+    
     @media only screen and (min-width: $mobileMenuBreakpoint) {
+        height: auto;
         position: absolute;
         width: 50%;
         box-sizing: border-box;
