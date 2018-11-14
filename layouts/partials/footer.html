@@ -6,19 +6,21 @@
                 var burgerAnimate;
                 var burgerLine1Pos, burgerLine2Pos;
                 var burgerLine1Angle = burgerLine3Angle = 0;
+                var menuStatus = 'close';
+                var currentURL = window.location.href;
+                if (currentURL.indexOf("menu") >= 0) {
+                    toggleMenu('open');
+                    menuStatus = 'open';
+                }
                 $('.open-menu').on('click touch', function() {
-                    burgerLine1Pos = $('#burger-line-1').css('top');
-                    burgerLine3Pos = $('#burger-line-3').css('top');
-                    burgerLine1Pos = parseInt(burgerLine1Pos, 10);
-                    burgerLine3Pos = parseInt(burgerLine3Pos, 10);
+                    clearInterval(burgerAnimate);
+                    toggleMenu('close');
                     burgerAnimate = setInterval(burgerAnimationOpen, 25);
                 });
                 
                 $('.close-menu').on('click touch', function() {
-                    burgerLine1Pos = $('#burger-line-1').css('top');
-                    burgerLine3Pos = $('#burger-line-3').css('top');
-                    burgerLine1Pos = parseInt(burgerLine1Pos, 10);
-                    burgerLine3Pos = parseInt(burgerLine3Pos, 10);
+                    clearInterval(burgerAnimate);
+                    toggleMenu('open');
                     burgerAnimate = setInterval(burgerAnimationClose, 25);
                 });
                 
@@ -36,6 +38,7 @@
                         $('#burger-line-2').css('transform', 'rotate(' + burgerLine3Angle + 'deg)');
                         $('#burger-line-3').css('transform', 'rotate(' + burgerLine3Angle + 'deg)');
                         if (burgerLine1Angle == 45) {
+                            menuStatus = 'open';
                             clearInterval(burgerAnimate);
                         }
                     }
@@ -55,11 +58,35 @@
                         $('#burger-line-1').css('top', burgerLine1Pos + 'px');
                         $('#burger-line-3').css('top', burgerLine3Pos + 'px');
                         if (burgerLine1Pos == 0) {
+                            menuStatus = 'close';
                             clearInterval(burgerAnimate);
                         }
                     }
                 }
-  
+
+                function toggleMenu(newStatus) {
+                    if (newStatus == 'close') {
+                        $('#burger-line-1').css('top', '0');
+                        burgerLine1Pos = 0;
+                        $('#burger-line-3').css('top', '24px');
+                        burgerLine3Pos = 24;
+                        $('#burger-line-1').css('transform', 'rotate(0deg)');
+                        burgerLine1Angle = 0
+                        $('#burger-line-2').css('transform', 'rotate(0deg)');
+                        $('#burger-line-3').css('transform', 'rotate(0deg)');
+                        burgerLine3Angle = 0;
+                    } else if (newStatus == 'open') {
+                        $('#burger-line-1').css('top', '12px');
+                        burgerLine1Pos = 12;
+                        $('#burger-line-3').css('top', '12px');
+                        burgerLine3Pos = 12;
+                        $('#burger-line-1').css('transform', 'rotate(45deg)');
+                        burgerLine1Angle = 45;
+                        $('#burger-line-2').css('transform', 'rotate(-45deg)');
+                        $('#burger-line-3').css('transform', 'rotate(-45deg)');
+                        burgerLine3Angle = -45;
+                    }
+                }
                     
                 
                 {{- if eq .Title "Tim Ball Paintings" }}
