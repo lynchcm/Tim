@@ -1,7 +1,8 @@
 {{ partial "head.html" . }}
 {{ partial "timball-hr.html" . }}
 {{ partial "gallery-menu.html" . }}
-    <div class="gallery-artwork-container" id="test">
+<!--<div id="test">-->
+    <div class="gallery-artwork-container">
 {{ $.Scratch.Set "counter" 0 }}
 {{ range where (.Pages.ByParam "order") "Params.type" "artwork" }}
         <div class="gallery-artwork-col">
@@ -36,4 +37,5 @@
             <h3 id="artwork-size">Size</h3>
         </div>
     </div>
+<!--</div>-->
 {{ partial "footer.html" . }}

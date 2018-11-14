@@ -82,7 +82,7 @@
                         $('#scroll-controls-container').hide();
                     }
                     $('#image-viewer').show();
-                    $('body').css('overflow', 'hidden');
+                    $('.gallery-artwork-container').css('overflow', 'hidden');
                     for (var i = 0; i < imgArray.length; i++) {
                         if (imgArray[i] == imgNum) {
                             imgNum = i;
@@ -101,7 +101,7 @@
 
                 $('#close-image-viewer').on('click touch', function() {
                     $('#image-viewer').hide();
-                    $('body').css('overflow', 'visible');
+                    $('.gallery-artwork-container').css('overflow', 'visible');
                 });
                 
                 function scrollLeft() {
