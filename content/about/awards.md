@@ -1,5 +1,5 @@
 +++
-menuitem = "false"
+menuitem = false
 title = "awards"
 
 +++

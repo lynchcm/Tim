@@ -28,7 +28,7 @@
         {{ end }}
             <ul id="menu" class="capitals">
                 {{- $title := .Params.menutitle -}}
-                {{ range where ($.Site.Pages.ByParam "menuorder") "Params.menuitem" "true" }}
+                {{ range where ($.Site.Pages.ByParam "menuorder") "Params.menuitem" true }}
                 <a href="{{ .Permalink }}">
                     <li{{ if in $title .Params.menutitle }} class="active"{{ end }}>{{ .Params.menutitle }}</li>
                 </a>

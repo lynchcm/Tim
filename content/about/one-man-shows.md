@@ -1,5 +1,5 @@
 +++
-menuitem = true
+menuitem = false
 title = "one-man-shows"
 
 +++
