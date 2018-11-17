@@ -5,6 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         
+        <meta name="description" content="Tim Ball is a Derbyshire-based contemporary landscape artist inspired by his home in the Peak District. See current shows, request commissions and explore the gallery of his works.">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         {{ $sass := resources.Get "style.scss" }}
@@ -20,6 +22,9 @@
         
         {{ if eq .Title "Tim Ball Paintings" }}
         <div id="homepage-menu">
+        {{ end }}
+        {{ if eq .Title "About" }}
+        <div id="about-menu">
         {{ end }}
             <ul id="menu" class="capitals">
                 {{- $title := .Params.menutitle -}}
@@ -41,7 +46,6 @@
                     <div class="menu-burger"></div>
                 </a>
             </div>
-        {{ if eq .Title "Tim Ball Paintings" }}
+        {{ if or (eq .Title "Tim Ball Paintings") (eq .Title "About") }}
         </div>
         {{ end }}
-        

@@ -1,25 +1,17 @@
 {{ partial "head.html" . }}
-{{ partial "timball-hr.html" . }}
-<!--
-        <div class="row">
-            <div class="column-33 about-photo">
-                <img src="/images/tim-photo.png">
-            </div>
-            <div class="column-66">
-                <p>POST ENIM CHRYSIPPUM EUM NON SANE EST DISPUTATUM. QUIS ENIM POTEST ISTIS, QUAE TE, UT AIS, DELECTANT, BREVIBUS ET ACUTIS AUDITIS DE SENTENTIA DECEDERE? CONSEQUENTIA EXQUIRERE, QUOAD SIT ID, QUOD VOLUMUS, EFFECTUM. IDEM ETIAM DOLOREM SAEPE PERPETIUNTUR, NE, SI ID NON FACIANT, INCIDANT IN MAIOREM. POST ENIM CHRYSIPPUM EUM NON SANE EST DISPUTATUM. QUIS ENIM POTEST ISTIS, QUAE TE, UT AIS, DELECTANT, BREVIBUS ET ACUTIS AUDITIS DE SENTENTIA DECEDERE.</p>
-            </div>
-        </div>
--->
 
+        
         <div class="row about-tim">
-            <div id="tim-photo">
+            <div id="tim-photo" class="col-50-1000">
                 <img src="/images/tim-photo.jpg">
             </div>
-            <div id="tim-bio">
-                <p>My approach to painting has always been based on observations made whilst walking in the Derbyshire landscape that surrounds me.</p>
-                <p>I have always been drawn to woodlands and other wild places as a starting point for these works and it is with these interpretations whilst out exploring that I bring back to my studio, these may be drawings, quick sketches, photographs or just memories.</p>
-                <p>In order to be able to capture some of those fleeting glimpses within the landscape I will often return to the same places for months sometimes years in order to observe the seasonal changes in these visual landscapes and to contemplate the subtle changes that occur. I will then attempt to reinterpret and play around with these images in order to truly reflect those experiences.</p>
-                <p>The paintings are built up using a process of thin washes to establish form and space and then worked over with oils, varnish and in some cases pastels to add to the sense of depth.</p>
+            <div id="tim-bio" class="col-50-1000">
+                <div id="tim-bio-text-div">
+                    <p>Observations made while walking in the Derbyshire countryside have always been my inspiration.</p>
+                    <p>Whether it’s drawings, sketches, photos or just memories, I bring the outdoors back to my studio as my starting point.</p>
+                    <p>To catch some of those fleeting glimpses and observe seasonal changes, I’ll often return to the same place for months or years before capturing and reinterpreting those subtleties to truly reflect the landscape’s character.</p>
+                </div>
+                <img src="/images/tim.png">
             </div>
         </div>
 
@@ -44,19 +36,25 @@
             </div>
         </div>
 -->
+
+        <div class="current-shows">
+            <h2 class="capitals">See Tim's Work</h2>
+            <p>Currently showing at the Tarpey Gallery in Castle Donington.</p>
+            <p>For viewings and private sales, <a href="/contact">get in touch</a>.</p>
+        </div>
+
         <div class="row">
-            <div class="column-50">
-                <h2 class="capitals">Exhibitions</h2>
-                <p>POST ENIM CHRYSIPPUM EUM NON SANE EST DISPUTATUM. QUIS ENIM POTEST ISTIS, QUAE TE, UT AIS, DELECTANT, BREVIBUS ET ACUTIS AUDITIS DE SENTENTIA DECEDERE? CONSEQUENTIA EXQUIRERE, QUOAD SIT ID, QUOD VOLUMUS, EFFECTUM. IDEM ETIAM DOLOREM SAEPE PERPETIUNTUR, NE, SI ID NON FACIANT, INCIDANT IN MAIOREM. POST ENIM CHRYSIPPUM EUM NON SANE EST DISPUTATUM. QUIS ENIM POTEST ISTIS, QUAE TE, UT AIS, DELECTANT, BREVIBUS ET ACUTIS AUDITIS DE SENTENTIA DECEDERE.</p>
+            <div class="col-50 exhibitions">
+                <h2 class="capitals">Group &amp; Open Exhibitions</h2>
+                <p>{{ .Content }}</p>
             </div>
-            <div class="column-50">
-                <h2 class="capitals">Solo Shows</h2>
+            <div class="col-50">
+                <h2 class="capitals">Awards &amp; Acknowledgements</h2>
                 <p>POST ENIM CHRYSIPPUM EUM NON SANE EST DISPUTATUM. QUIS ENIM POTEST ISTIS, QUAE TE, UT AIS, DELECTANT, BREVIBUS ET ACUTIS AUDITIS DE SENTENTIA DECEDERE?</p>
-                <h2 class="capitals">Galleries</h2>
+                <h2 class="capitals">One-Man Shows</h2>
                 <p>POST ENIM CHRYSIPPUM EUM NON SANE EST DISPUTATUM. QUIS ENIM POTEST ISTIS, QUAE TE, UT AIS, DELECTANT, BREVIBUS ET ACUTIS AUDITIS DE SENTENTIA DECEDERE?</p>
-                <div class="award">
-                    <p>POST ENIM CHRYSIPPUM EUM NON SANE EST DISPUTATUM. QUIS ENIM POTEST ISTIS, QUAE TE, UT AIS, DELECTANT, BREVIBUS ET ACUTIS AUDITIS DE SENTENTIA DECEDERE?</p>
-                </div>
+                
+  
             </div>
         </div>
 {{ partial "footer.html" . }}
