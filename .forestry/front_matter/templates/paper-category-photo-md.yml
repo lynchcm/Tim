@@ -1,0 +1,30 @@
+---
+label: paper category photo.md
+hide_body: 
+is_partial: 
+fields:
+- name: order
+  label: Order
+  type: text
+  hidden: false
+  default: ''
+- name: sitemap_exclude
+  label: Sitemap exclude
+  type: boolean
+  hidden: false
+  default: ''
+- name: type
+  label: Type
+  type: text
+  hidden: false
+  default: ''
+- name: medium
+  label: Medium
+  type: text
+  hidden: false
+  default: ''
+- name: mediumImg
+  label: Mediumimg
+  type: file
+  hidden: false
+  default: ''
