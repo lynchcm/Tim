@@ -29,4 +29,5 @@ fields:
   hidden: false
   default: ''
 pages:
+- content/gallery/board category photo.md
 - content/gallery/paper category photo.md
