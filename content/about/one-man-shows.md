@@ -1,8 +1,8 @@
 +++
-menuitem = "false"
+menuitem = true
 title = "one-man-shows"
 
 +++
-**2018** Wirksworth Festival
+**2016** Tarpey Gallery, Castle Donnington
 
-**2018** Derbyshire Open
+**1995** The Quaker Gallery, London
