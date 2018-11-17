@@ -1,6 +1,6 @@
 +++
 menuitem = "false"
-title = "Exhibitions"
+title = "exhibitions"
 
 +++
 **2018** Wirksworth Festival

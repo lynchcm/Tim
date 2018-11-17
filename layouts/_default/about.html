@@ -46,13 +46,13 @@
         <div class="row">
             <div class="col-50 exhibitions">
                 <h2 class="capitals">Group &amp; Open Exhibitions</h2>
-                <p>{{ .Content }}</p>
+                <p>{{ range where .Pages ".Title" "exhibitions" }}{{ .Content }}{{ end }}</p>
             </div>
             <div class="col-50">
                 <h2 class="capitals">Awards &amp; Acknowledgements</h2>
-                <p>POST ENIM CHRYSIPPUM EUM NON SANE EST DISPUTATUM. QUIS ENIM POTEST ISTIS, QUAE TE, UT AIS, DELECTANT, BREVIBUS ET ACUTIS AUDITIS DE SENTENTIA DECEDERE?</p>
+                <p>{{ range where .Pages ".Title" "awards" }}{{ .Content }}{{ end }}</p>
                 <h2 class="capitals">One-Man Shows</h2>
-                <p>POST ENIM CHRYSIPPUM EUM NON SANE EST DISPUTATUM. QUIS ENIM POTEST ISTIS, QUAE TE, UT AIS, DELECTANT, BREVIBUS ET ACUTIS AUDITIS DE SENTENTIA DECEDERE?</p>
+                <p>{{ range where .Pages ".Title" "one-man-shows" }}{{ .Content }}{{ end }}</p>
                 
   
             </div>
