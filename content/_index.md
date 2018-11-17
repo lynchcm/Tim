@@ -1,7 +1,7 @@
 +++
-title = "Tim Ball Paintings"
 menuitem = "true"
+menuorder = 1
 menutitle = "Home"
-menuorder = "1"
+title = "Tim Ball Paintings"
+
 +++
-Tim Ball
