@@ -1,8 +1,8 @@
 +++
 layout = "gallery"
-title = "Gallery"
-menuitem = "true"
+menuitem = true
+menuorder = 3
 menutitle = "Gallery"
-menuorder = "3"
-+++
+title = "Gallery"
 
++++
