@@ -6,4 +6,3 @@ menutitle = "About"
 title = "About"
 
 +++
-**2018** Wirksworth Festival
