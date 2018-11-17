@@ -7,5 +7,13 @@ fields:
   name: homepageimg1
   label: Image 1
   description: Image 1 for fading slideshow on homepage
+- type: file
+  name: homepageimg2
+  label: Image 2
+  description: Image 2 for fading slideshow on homepage
+- type: file
+  name: homepageimg3
+  label: Image 3
+  description: Image 3 for fading slideshow on homepage
 pages:
 - content/_index.md
