@@ -1,27 +1,27 @@
 ---
-label: paper category photo.md
-hide_body: 
-is_partial: 
+label: Medium Category Photo.md
+hide_body: true
+is_partial: false
 fields:
 - name: order
   label: Order
   type: text
-  hidden: false
+  hidden: true
   default: ''
 - name: sitemap_exclude
   label: Sitemap exclude
   type: boolean
-  hidden: false
+  hidden: true
   default: ''
 - name: type
   label: Type
   type: text
-  hidden: false
+  hidden: true
   default: ''
 - name: medium
   label: Medium
   type: text
-  hidden: false
+  hidden: true
   default: ''
 - name: mediumImg
   label: Mediumimg
