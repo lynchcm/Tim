@@ -1,0 +1,15 @@
+---
+label: Exhibitions
+hide_body: 
+is_partial: 
+fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
+- name: menuitem
+  label: Menuitem
+  type: boolean
+  hidden: false
+  default: ''
