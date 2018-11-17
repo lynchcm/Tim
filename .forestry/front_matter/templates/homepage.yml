@@ -4,7 +4,7 @@ hide_body: true
 is_partial: false
 fields:
 - type: file
-  name: homepage-img1
+  name: homepageimg1
   label: Image 1
   description: Image 1 for fading slideshow on homepage
 pages:
