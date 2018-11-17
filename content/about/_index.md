@@ -1,4 +1,5 @@
 +++
+layout = "about"
 title = "About"
 menuitem = "true"
 menutitle = "About"
