@@ -1,8 +1,9 @@
 +++
 layout = "about"
-title = "About"
 menuitem = "true"
+menuorder = 2
 menutitle = "About"
-menuorder = "2"
+title = "About"
+
 +++
-Tim Ball
+**2018** Wirksworth Festival
