@@ -13,3 +13,5 @@ fields:
   type: boolean
   hidden: true
   default: ''
+pages:
+- content/about/Exhibition.md
