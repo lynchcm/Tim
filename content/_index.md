@@ -1,5 +1,5 @@
 +++
-homepage-img1 = "/images/tim-homepage1.png"
+homepageimg1 = "/images/tim-homepage1.png"
 menuitem = "true"
 menuorder = 1
 menutitle = "Home"
