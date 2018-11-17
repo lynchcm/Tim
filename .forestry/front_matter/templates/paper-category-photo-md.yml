@@ -1,5 +1,5 @@
 ---
-label: Medium Category Photo.md
+label: Medium Category Photo
 hide_body: true
 is_partial: false
 fields:
@@ -28,6 +28,7 @@ fields:
   type: file
   hidden: false
   default: ''
+  description: Photo to show this medium in the gallery
 pages:
 - content/gallery/canvas category photo.md
 - content/gallery/board category photo.md
