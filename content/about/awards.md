@@ -3,6 +3,6 @@ menuitem = "false"
 title = "awards"
 
 +++
-**2018** Wirksworth Festival
+**2016** Winner of the Ashbourne Festival
 
-**2018** Derbyshire Open
+**2015** Winner of the peoples prize, Old station Gallery, Rowsley
