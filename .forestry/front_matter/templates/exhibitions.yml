@@ -14,5 +14,6 @@ fields:
   hidden: true
   default: ''
 pages:
+- content/about/awards.md
 - content/about/exhibitions.md
 - content/about/one-man-shows.md
