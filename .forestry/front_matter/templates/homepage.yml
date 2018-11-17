@@ -7,3 +7,5 @@ fields:
   name: homepage-img1
   label: Image 1
   description: Image 1 for fading slideshow on homepage
+pages:
+- content/_index.md
