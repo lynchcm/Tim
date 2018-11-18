@@ -35,6 +35,7 @@ fields:
   hidden: true
   default: 'true'
 pages:
+- content/gallery/board/artwork4.md
 - content/gallery/board/artwork6.md
 - content/gallery/board/artwork2.md
 - content/gallery/board/artwork3.md
