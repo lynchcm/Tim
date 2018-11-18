@@ -1,0 +1,45 @@
+---
+label: Canvas Artwork
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  label: Parameter for Hugo to search by
+  name: type
+  hidden: true
+  default: artwork
+- type: text
+  label: Artwork title
+  name: artworkTitle
+  description: e.g. Falling into Autumn
+  config:
+    required: true
+- type: datetime
+  label: Artwork date
+  name: artworkDate
+  config:
+    date_format: DD/MM/YYYY
+    time_format: " "
+- type: text
+  label: Artwork medium
+  name: artworkMedium
+  hidden: true
+  default: Canvas
+- type: text
+  name: artworkSize
+  label: Artwork size
+- type: number
+  name: order
+  label: Order
+  config:
+    min: '1'
+    max: '1000'
+    step: '1'
+- type: file
+  label: Artwork
+  name: artworkImg
+- type: boolean
+  label: Exclude from sitemap
+  name: sitemap_exclude
+  hidden: true
+  default: true
