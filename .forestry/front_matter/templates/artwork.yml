@@ -23,7 +23,9 @@ fields:
   label: Artwork medium
   description: i.e. Canvas, Paper or Board
   config:
-    required: true
+    required: false
+  default: Board
+  hidden: true
 - type: text
   name: artworkSize
   label: Artwork size
