@@ -43,4 +43,5 @@ fields:
   label: Exclude from sitemap
   name: sitemap_exclude
 pages:
+- content/gallery/board/art1.md
 - content/gallery/board/falling-into-autumn.md
