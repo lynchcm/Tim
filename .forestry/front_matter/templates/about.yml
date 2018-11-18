@@ -28,5 +28,3 @@ fields:
   type: text
   hidden: true
   default: ''
-pages:
-- content/about/_index.md

@@ -13,5 +13,3 @@ fields:
   type: boolean
   hidden: true
   default: ''
-pages:
-- content/thankyou/_index.md

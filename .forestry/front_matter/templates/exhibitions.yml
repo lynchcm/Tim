@@ -13,8 +13,3 @@ fields:
   type: boolean
   hidden: true
   default: ''
-pages:
-- content/about/see-tims-work.md
-- content/about/awards.md
-- content/about/exhibitions.md
-- content/about/one-man-shows.md

@@ -15,5 +15,3 @@ fields:
   name: homepageimg3
   label: Image 3
   description: Image 3 for fading slideshow on homepage
-pages:
-- content/_index.md
