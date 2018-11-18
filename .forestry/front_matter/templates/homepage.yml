@@ -1,5 +1,5 @@
 ---
-label: Homepage
+label: Homepage Images
 hide_body: true
 is_partial: false
 fields:
@@ -15,3 +15,8 @@ fields:
   name: homepageimg3
   label: Image 3
   description: Image 3 for fading slideshow on homepage
+- type: boolean
+  name: sitemap_exclude
+  hidden: true
+  default: true
+  label: Exclude from sitemap
