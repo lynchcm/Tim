@@ -7,7 +7,6 @@ sections:
 - type: document
   path: content/homepage images inc.md
   label: Homepage Images
-  match: "**/*"
 - type: directory
   path: content/gallery
   label: Gallery
@@ -17,7 +16,7 @@ sections:
   - artwork
 - type: directory
   path: content/about
-  label: Pages
+  label: About
   create: none
   match: "**/*inc.md"
 upload_dir: static/images
