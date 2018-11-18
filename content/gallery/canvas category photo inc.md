@@ -1,6 +1,6 @@
 +++
 medium = "canvas"
-mediumImg = "/images/canvas.png"
+mediumImg = "/uploads/canvas.png"
 order = 2
 sitemap_exclude = true
 type = "medium"

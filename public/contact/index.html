@@ -1,5 +1,81 @@
-        <!-- SnapWidget -->
-<!--<iframe src="https://snapwidget.com/embed/621281" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:480px; height:160px"></iframe>-->
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <meta name="description" content="Tim Ball is a Derbyshire-based contemporary landscape artist inspired by his home in the Peak District. See current shows, request commissions and explore the gallery of his works.">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        
+        
+        
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+        
+        <title>Contact</title>
+        
+        <link rel="icon" href="/images/favicon.png" type="image/png" sizes="64x64">
+        
+    </head>
+    <body>
+        
+        
+        
+            <ul id="menu" class="capitals">
+                <a href="/">
+                    <li>Home</li>
+                </a>
+                <a href="/about/">
+                    <li>About</li>
+                </a>
+                <a href="/gallery/">
+                    <li>Gallery</li>
+                </a>
+                <a href="/contact/">
+                    <li class="active">Contact</li>
+                </a>
+            </ul>
+            <div class="burger-buttons">
+                <a href="#menu" class="open-menu">
+                    <div class="menu-burger">
+                        <div class="burger-line" id="burger-line-1"></div>
+                        <div class="burger-line" id="burger-line-2"></div>
+                        <div class="burger-line" id="burger-line-3"></div>
+                    </div>
+                </a>
+                <a href="#" class="close-menu">
+                    <div class="menu-burger"></div>
+                </a>
+            </div>
+        
+
+        <div id="tim-sig-div">
+            <img id="tim-sig" src="/images/tim.png">
+            <hr>
+        </div>
+        <form action="https://formspree.io/lynch.cm@gmail.com" method="POST">
+            <div class="form-label">
+                <label>NAME</label>
+                <label>EMAIL</label>
+                <label>MESSAGE</label>
+            </div>
+            <div class="form-input">
+                <input type="text" name="name">
+                <input type="email" name="email">
+                <textarea rows="5" name="message"></textarea>
+                <button type="sumbit">SEND</button>
+                <input type="hidden" name="_next" value="https://timballpaintings.com/thankyou">
+            </div>
+        </form>
+
+        <div class="made-by">
+            <p>Made by <a href="https://wearemicro.co" target="_blank">Micro</a></p>
+        </div>
+        
+
         <script>
             $(function () {
                 
@@ -87,59 +163,6 @@
                         burgerLine3Angle = -45;
                     }
                 }
-                    
-                
-                {{- if eq .Title "Tim Ball Paintings" }}
-                
-                var coverImgArray = [];
-                var k = 0;
-                var m = 1;
-                while (k == 0) {
-                    if ($('#homepage-img' + m).length) {
-                        coverImgArray[m-1] = $('#homepage-img' + m).attr('src');
-//                        alert(coverImgArray[m-1]);
-                        m++;
-                    } else {
-                        k++;
-                    }
-                }
-                var imgSwitch = 0;
-                var imgArrayCounter = 1;
-                var imgIndex = 0;
-                setInterval(function() {
-                    imgIndex = imgArrayCounter % coverImgArray.length;
-                    if (imgSwitch % 2 == 0) {
-                        $('#homepage-img2').attr('src', coverImgArray[imgIndex]);
-                        $('#homepage-img2').css('opacity', 0);
-                        $('#homepage-img2').css('z-index', 3);
-                        $('#homepage-img2').animate({
-                            opacity: 1}, 2000, function() {
-                            $('#homepage-img1').css('z-index', 1);
-                            $('#homepage-img2').css('z-index', 2);
-                        });
-                    }
-                    if (imgSwitch % 2 == 1) {
-                        $('#homepage-img1').attr('src', coverImgArray[imgIndex]);
-                        $('#homepage-img1').css('opacity', 0);
-                        $('#homepage-img1').css('z-index', 3);
-                        $('#homepage-img1').animate({
-                            opacity: 1}, 2000, function() {
-                            $('#homepage-img2').css('z-index', 1);
-                            $('#homepage-img1').css('z-index', 2);
-                        });
-                    }
-                    imgSwitch++;
-                    imgArrayCounter++;
-                }, 4000);
-                
-                if ($(window).width() < 400) {
-                    var homepageRowHeight = (0.65 * $(window).height()) + 'px';
-                    var homepageImageHeight = $(window).height() + 'px';
-//                    $('#homepage-row').css('height', homepageRowHeight);
-                    $('#homepage-image-div').css('height', homepageImageHeight);
-                }
-                
-                {{ end }}
                 
                 var touchscreenDevice = false;
                 window.addEventListener('touchstart', function() {
@@ -159,7 +182,7 @@
                     if ($('#image-' + j).length) {
                         imgArray[j] = 'image-' + j;
                         titleArray[j] = $('#title-' + j).html();
-//                        dateArray[j] = $('#date-' + j).html();
+
                         mediumArray[j] = $('#medium-' + j).html();
                         sizeArray[j] = $('#size-' + j).html();
                         j++;
@@ -173,7 +196,7 @@
                     imgSrcString = $('#image-' + imgNum).attr('src');
                     $('#img-large-view').attr('src', imgSrcString);
                     if (touchscreenDevice == true) {
-//                        $('#scroll-controls-container').hide();
+
                     }
                     $('#image-viewer').show();
                     $('.gallery-artwork-container').css('overflow', 'hidden');
@@ -222,7 +245,7 @@
             
                 function writeCaptionInfo(i) {
                     $('#artwork-title').html(titleArray[i]);
-//                    $('#artwork-date').html(dateArray[i]);
+
                     $('#artwork-medium').html(mediumArray[i]);
                     $('#artwork-size').html(sizeArray[i]);
                 }
@@ -246,3 +269,4 @@
         </script>
     </body>
 </html>
+

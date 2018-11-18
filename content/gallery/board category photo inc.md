@@ -1,6 +1,6 @@
 +++
 medium = "Board"
-mediumImg = "/images/board.png"
+mediumImg = "/uploads/board.png"
 order = 1
 sitemap_exclude = true
 type = "medium"

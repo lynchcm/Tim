@@ -6,8 +6,11 @@
 {{ $.Scratch.Set "counter" 0 }}
 {{ range where (.Pages.ByParam "order") "Params.type" "artwork" }}
         <div class="gallery-artwork-col">
-            <div class="gallery-artwork-container">
-                <img id='image-{{ $.Scratch.Get "counter" }}' src="{{ .Params.artworkImg }}" class="gallery-image">
+            <div class="gallery-artwork-category-container">
+                {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.artworkImg) }}
+                {{ $resizedSmall := $resource.Resize "400x" }}
+                <img id='image-{{ $.Scratch.Get "counter" }}' src="{{ $resizedSmall.Permalink }}" class="gallery-image">
+                <div id='overlay-{{ $.Scratch.Get "counter" }}' class="overlay"></div>
                 <h3 id='title-{{ $.Scratch.Get "counter" }}'>{{ .Params.artworkTitle }}</h3>
     <!--            <h3 id='date-{{ $.Scratch.Get "counter" }}'>{{ .Params.artworkDate }}</h3>-->
                 <h3 id='medium-{{ $.Scratch.Get "counter" }}'>{{ humanize .Params.artworkMedium }}</h3>

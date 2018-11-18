@@ -1,6 +1,6 @@
 +++
 artworkDate = "2018-11-12T00:00:00+00:00"
-artworkImg = "/images/board.png"
+artworkImg = "/uploads/board.png"
 artworkMedium = "Board"
 artworkSize = "30 x 30 cm"
 artworkTitle = "Falling into Autumn"

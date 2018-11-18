@@ -1,6 +1,6 @@
 +++
 artworkDate = "2018-11-01T00:00:00+00:00"
-artworkImg = "/images/tim-homepage2.JPG"
+artworkImg = "/uploads/tim-homepage2.JPG"
 artworkMedium = "Board"
 artworkSize = "30 x 30 cm"
 artworkTitle = "Squiggles"

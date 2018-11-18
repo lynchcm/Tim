@@ -2,7 +2,7 @@ $themeGray: #7A7A7A;
 $themeMustard: #DCC357;
 $mainFont: 'Raleway', sans-serif;
 
-$mobileMenuBreakpoint: 600px;
+$mobileMenuBreakpoint: 650px;
 $aboutColBreakpoint: 1000px;
 
 body {
@@ -116,11 +116,6 @@ hr {
 }
 
 #homepage-menu {
-//    height: 100vh;
-//    position: absolute;
-//    z-index: 10;
-//    width: 100%;
-//    background-color: red;
     
     @media only screen and (min-width: $mobileMenuBreakpoint) {
         height: auto;
@@ -412,7 +407,6 @@ hr {
         flex-direction: column;
         justify-content: center;
         padding: 50px 10% 20px 10%;
-//        border: 1px solid red;
         
         @media only screen and (min-width: $mobileMenuBreakpoint) {
 //            background-color: #4A4A4A80;
@@ -428,7 +422,6 @@ hr {
     img {
         width: 30%;
         min-width: 200px;
-//        border: 1px solid red;
         display: block;
         margin: 0 0 30px auto;
     }
@@ -581,7 +574,7 @@ hr {
             display: none;
         }
         
-        .gallery-artwork-container {
+        .gallery-artwork-category-container {
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -589,8 +582,11 @@ hr {
             align-items: center;
             width: 90%;
             height: 100%;
+            position: relative;
             
 //            max-height: 80%;
+            
+            
             
             img {
                 border: 6px solid white;
@@ -598,9 +594,20 @@ hr {
                 max-width: 95%;
                 display: block;
                 margin: 0 auto;
+                box-sizing: border-box;
             }
         }
     }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    z-index: 4;
 }
 
 #test {
