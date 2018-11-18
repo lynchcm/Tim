@@ -17,7 +17,7 @@
 
         <div class="current-shows">
             <h2 class="capitals">See Tim's Work</h2>
-            <p>Currently showing at the Tarpey Gallery in Castle Donington.</p>
+            <p>{{ range where .Pages ".Title" "see-tims-work" }}{{ .Content }}{{ end }}</p>
             <p>For viewings and private sales, <a href="/contact">get in touch</a>.</p>
         </div>
 
