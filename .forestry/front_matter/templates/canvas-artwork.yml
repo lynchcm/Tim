@@ -23,7 +23,7 @@ fields:
 - type: text
   label: Artwork medium
   name: artworkMedium
-  hidden: true
+  hidden: false
   default: Canvas
 - type: text
   name: artworkSize
