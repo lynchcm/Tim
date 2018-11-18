@@ -17,4 +17,5 @@ fields:
   label: Menu item
   hidden: true
 pages:
+- content/about/awards inc.md
 - content/about/exhibitions inc.md
