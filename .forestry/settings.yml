@@ -12,11 +12,10 @@ sections:
   templates:
   - artwork
 - type: directory
-  path: content
+  path: content/about
   label: Pages
   create: none
   match: "**/*inc.md"
-  exclude: "/gallery*"
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
