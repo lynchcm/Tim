@@ -25,6 +25,7 @@ fields:
   name: artworkMedium
   hidden: false
   default: Canvas
+  description: e.g. Canvas, Paper or Board
 - type: text
   name: artworkSize
   label: Artwork size
