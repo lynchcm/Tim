@@ -1,0 +1,9 @@
+---
+label: Artwork
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: artwork_title
+  label: Artwork Title
+  description: e.g. Falling into Autumn
