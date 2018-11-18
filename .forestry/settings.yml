@@ -9,11 +9,9 @@ sections:
   label: Homepage Images
 - type: directory
   path: content/gallery
-  label: Gallery
-  create: documents
+  label: Gallery Category Photos
+  create: none
   match: "**/*inc.md"
-  templates:
-  - artwork
 - type: directory
   path: content/about
   label: About

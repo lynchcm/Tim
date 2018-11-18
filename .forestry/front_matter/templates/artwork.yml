@@ -42,5 +42,3 @@ fields:
   default: true
   label: Exclude from sitemap
   name: sitemap_exclude
-pages:
-- content/gallery/falling-into-autumn.md
