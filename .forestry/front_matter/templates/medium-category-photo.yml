@@ -26,4 +26,5 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/canvas category photo inc.md
 - content/gallery/board category photo inc.md
