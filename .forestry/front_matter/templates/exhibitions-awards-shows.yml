@@ -17,4 +17,5 @@ fields:
   label: Menu item
   hidden: true
 pages:
+- content/about/see tims work inc.md
 - content/about/exhibitions inc.md
