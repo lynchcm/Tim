@@ -20,5 +20,3 @@ fields:
   hidden: true
   default: true
   label: Exclude from sitemap
-pages:
-- content/homepage images inc.md
