@@ -14,11 +14,9 @@ sections:
 - type: directory
   path: content
   label: Pages
-  create: all
+  create: none
   match: "**/*inc.md"
-  exclude: "**/*exc.md"
-  templates:
-  - artwork
+  exclude: "**/gallery*"
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
