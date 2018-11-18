@@ -4,7 +4,7 @@ artworkImg = "/images/Tim1.jpg"
 artworkMedium = "Oil on Canvas"
 artworkSize = "40 x 40 cm"
 artworkTitle = "Serendipity"
-order = "01"
+order = "001"
 sitemap_exclude = "true"
 type = "artwork"
 
