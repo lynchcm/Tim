@@ -1,7 +1,7 @@
 +++
 menuitem = false
-title = "exhibitions"
 sitemap_exclude = true
+title = "exhibitions"
 
 +++
 **2018** Wirksworth Festival
