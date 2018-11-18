@@ -25,6 +25,7 @@ fields:
 - type: text
   name: order
   label: Order
+  description: Use three digits starting from 001
 - type: file
   name: artworkImg
   label: Artwork
@@ -33,3 +34,6 @@ fields:
   label: Exclude from sitemap
   hidden: true
   default: 'true'
+pages:
+- content/gallery/board/artwork3.md
+- content/gallery/board/artwork1.md
