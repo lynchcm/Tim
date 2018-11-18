@@ -16,3 +16,5 @@ fields:
   name: menuitem
   label: Menu item
   hidden: true
+pages:
+- content/about/exhibitions inc.md
