@@ -26,3 +26,5 @@ fields:
   label: Exclude from sitemap
   hidden: true
   default: true
+pages:
+- content/gallery/board category photo inc.md
