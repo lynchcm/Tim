@@ -33,3 +33,5 @@ fields:
   label: Exclude from sitemap
   hidden: true
   default: 'true'
+pages:
+- content/gallery/board/artwork1.md
