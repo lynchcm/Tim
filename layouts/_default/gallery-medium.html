@@ -10,7 +10,7 @@
                 <img id='image-{{ $.Scratch.Get "counter" }}' src="{{ .Params.artworkImg }}" class="gallery-image">
                 <h3 id='title-{{ $.Scratch.Get "counter" }}'>{{ .Params.artworkTitle }}</h3>
     <!--            <h3 id='date-{{ $.Scratch.Get "counter" }}'>{{ .Params.artworkDate }}</h3>-->
-                <h3 id='medium-{{ $.Scratch.Get "counter" }}'>{{humanize .Params.artworkMedium }}</h3>
+                <h3 id='medium-{{ $.Scratch.Get "counter" }}'>{{ humanize .Params.artworkMedium }}</h3>
                 <h3 id='size-{{ $.Scratch.Get "counter" }}'>{{ .Params.artworkSize }}</h3>
             </div>
         </div>
