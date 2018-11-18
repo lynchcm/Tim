@@ -1,0 +1,18 @@
+---
+label: Exhibitions/Awards/Shows
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+  hidden: true
+- type: boolean
+  name: sitemap_exclude
+  label: Exclude from sitemap
+  hidden: true
+  default: true
+- type: boolean
+  name: menuitem
+  label: Menu item
+  hidden: true
