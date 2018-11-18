@@ -25,7 +25,7 @@ fields:
   config:
     required: false
   default: Board
-  hidden: true
+  hidden: false
 - type: text
   name: artworkSize
   label: Artwork size
