@@ -13,6 +13,11 @@ sections:
   create: none
   match: "**/*inc.md"
 - type: directory
+  path: content/gallery
+  label: Gallery Category Photos
+  create: none
+  match: "**/*inc.md"
+- type: directory
   path: content/gallery/board
   label: Board Artwork
   create: documents
@@ -21,10 +26,13 @@ sections:
   templates:
   - artwork
 - type: directory
-  path: content/gallery
-  label: Gallery Category Photos
-  create: none
-  match: "**/*inc.md"
+  path: content/gallery/paper
+  label: Paper Artwork
+  create: documents
+  match: "**/*"
+  exclude: "*_index.md"
+  templates:
+  - paper-artwork
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
