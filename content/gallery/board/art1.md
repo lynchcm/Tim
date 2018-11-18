@@ -1,6 +1,11 @@
 +++
+artworkDate = "2018-11-01T00:00:00+00:00"
+artworkImg = "/images/tim-homepage2.JPG"
+artworkMedium = "Board"
+artworkSize = "30 x 30 cm"
+artworkTitle = "Squiggles"
 date = "2018-11-18T18:47:13+00:00"
-draft = true
+order = 2
 sitemap_exclude = true
 title = "Art1"
 type = "artwork"
