@@ -1,6 +1,7 @@
 +++
 menuitem = false
 title = "awards"
+sitemap_exclude = true
 
 +++
 **2016** Winner of the Ashbourne Festival

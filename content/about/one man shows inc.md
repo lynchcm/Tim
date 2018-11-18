@@ -1,6 +1,7 @@
 +++
 menuitem = false
 title = "one-man-shows"
+sitemap_exclude = true
 
 +++
 **2016** Tarpey Gallery, Castle Donnington
