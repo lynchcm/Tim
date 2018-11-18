@@ -4,14 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: content/gallery/canvas
-  label: Canvas Artwork
-  create: documents
-  match: "**/*"
-  exclude: "*_index.md"
-  templates:
-  - canvas-artwork
 - type: document
   path: content/homepage images inc.md
   label: Homepage Images
@@ -33,6 +25,14 @@ sections:
   exclude: _index.md
   templates:
   - artwork
+- type: directory
+  path: content/gallery/canvas
+  label: Canvas Artwork
+  create: documents
+  match: "**/*"
+  exclude: "*_index.md"
+  templates:
+  - canvas-artwork
 - type: directory
   path: content/gallery/paper
   label: Paper Artwork
