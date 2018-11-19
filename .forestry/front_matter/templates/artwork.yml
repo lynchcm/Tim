@@ -9,6 +9,8 @@ fields:
   description: ''
   hidden: true
   default: artwork
+  config:
+    required: true
 - type: text
   label: Artwork title
   name: artworkTitle
