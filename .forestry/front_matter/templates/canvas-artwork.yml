@@ -45,4 +45,5 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/canvas/black-knoll.md
 - content/gallery/canvas/serendipity.md
