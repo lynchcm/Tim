@@ -10,7 +10,7 @@ fields:
   hidden: true
   default: artwork
   config:
-    required: true
+    required: false
 - type: text
   label: Artwork title
   name: artworkTitle
