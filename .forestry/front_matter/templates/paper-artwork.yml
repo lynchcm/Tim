@@ -45,4 +45,5 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/paper/artwork-1.md
 - content/gallery/paper/artwork.md
