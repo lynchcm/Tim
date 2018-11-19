@@ -45,6 +45,7 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/canvas/spring-awakening.md
 - content/gallery/canvas/spring-equinox.md
 - content/gallery/canvas/the-beginnings-of-spring.md
 - content/gallery/canvas/black-knoll.md
