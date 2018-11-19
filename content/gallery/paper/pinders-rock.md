@@ -1,7 +1,11 @@
 +++
-artworkMedium = "Paper"
+artworkDate = ""
+artworkImg = "/uploads/IMG_3031.JPG"
+artworkMedium = "Oil on Paper"
+artworkSize = "26 x 36 cm"
+artworkTitle = "Pinders Rock"
 date = "2018-11-19T09:03:45+00:00"
-draft = true
+order = ""
 sitemap_exclude = true
 title = "Pinders Rock"
 type = "artwork"
