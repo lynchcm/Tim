@@ -45,6 +45,7 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/canvas/hawthorn.md
 - content/gallery/canvas/blue-snow-black-rocks.md
 - content/gallery/canvas/spring-awakening.md
 - content/gallery/canvas/spring-equinox.md
