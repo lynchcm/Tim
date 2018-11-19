@@ -44,3 +44,5 @@ fields:
   name: sitemap_exclude
   hidden: true
   default: true
+pages:
+- content/gallery/canvas/art.md
