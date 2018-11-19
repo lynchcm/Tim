@@ -45,6 +45,7 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/canvas/spring-forms.md
 - content/gallery/canvas/blue-shadows.md
 - content/gallery/canvas/hawthorn.md
 - content/gallery/canvas/blue-snow-black-rocks.md
