@@ -607,7 +607,7 @@ hr {
     right: 0;
     bottom: 0;
     background-color: transparent;
-    z-index: 4;
+    z-index: 2;
 }
 
 #test {
@@ -670,6 +670,7 @@ hr {
         
         .scroll-control {
             position: absolute;
+            z-index: 3;
             width: 50px;
             height: 80px;
             border-radius: 10px;
