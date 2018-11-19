@@ -45,5 +45,6 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/paper/beyond-the-dove.md
 - content/gallery/paper/black-plantation.md
 - content/gallery/paper/artwork-1.md
