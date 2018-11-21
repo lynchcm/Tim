@@ -45,6 +45,7 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/paper/artwork2.md
 - content/gallery/paper/beyond-the-dove.md
 - content/gallery/paper/pinders-rock.md
 - content/gallery/paper/woodland-forms.md
