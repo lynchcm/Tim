@@ -791,6 +791,10 @@ form {
         margin: 0 auto;
         display: block;
         text-align: center;
+        
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     @media only screen and (min-width: 1000px) {

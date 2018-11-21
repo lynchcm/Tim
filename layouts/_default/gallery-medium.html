@@ -7,7 +7,7 @@
         <div class="gallery-artwork-col">
             <div class="gallery-artwork-category-container">
                 {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.artworkImg) }}
-                {{ $resizedSmall := $resource.Resize "400x" }}
+                {{ $resizedSmall := $resource.Resize "1200x" }}
                 <img id='image-{{ $.Scratch.Get "counter" }}' src="{{ $resizedSmall.Permalink }}" class="gallery-image">
                 <div id='overlay-{{ $.Scratch.Get "counter" }}' class="overlay"></div>
                 <h3 id='title-{{ $.Scratch.Get "counter" }}'>{{ .Params.artworkTitle }}</h3>
