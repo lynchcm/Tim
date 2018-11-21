@@ -45,6 +45,7 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/canvas/tesat.md
 - content/gallery/canvas/spring-forms.md
 - content/gallery/canvas/blue-shadows.md
 - content/gallery/canvas/hawthorn.md
