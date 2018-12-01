@@ -249,7 +249,7 @@ hr {
 }
 
 #tim-sig-div {
-    margin-top: 60px;
+    padding-top: 60px;
     
     @media only screen and (min-width: $mobileMenuBreakpoint) {
         margin-top: 0;
@@ -614,6 +614,137 @@ hr {
     border: 1px solid green;
     overflow: visible;
     height: 10px;
+}
+
+#swipe-photo-gallery-container {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    display: none;
+    
+    .swipe-photo-gallery {
+        width: 100%;
+        display: flex;
+//        border: 1px solid red;
+        box-sizing: border-box;
+        height: 100vh;
+        --n: 4;
+        width: calc(var(--n) * 100%);
+        transform: translateX(calc((var(--i, 0) * (-100%) / var(--n)) + var(--tx, 0px)));
+        
+
+        img {
+//            min-width: 100%;
+//            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            width: calc(100% / var(--n));
+//            border: 1px solid green;
+            pointer-events: none;
+        }
+    }
+    
+    .smooth {
+        transition: transform 0.5s ease-out;
+    }
+    
+    .swipe-gallery-controls {
+        position : absolute;
+        z-index: 6;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        .close-gallery {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            
+            .close-gallery-cross {
+                width: 80%;
+                height: 3px;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                background-color: white;
+            }
+            
+            .cross-1 {
+                transform: translateY(-50%) rotate(45deg);
+            }
+
+            .cross-2 {
+                transform: translateY(-50%) rotate(-45deg);
+            }
+        }
+        
+        .slide-scroll-controls {
+            position: absolute;
+            height: 100px;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            
+            .scroll-arrow {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                width: 60px;
+                display: none;
+                
+                &:hover {
+                    cursor: pointer;
+                }
+                
+                svg {
+                    position: absolute;
+                    top: 10%;
+                    left: 10%;
+                    width: 80%;
+                    height: 80%;
+                    pointer-events: none;
+                }
+            }
+            
+            #scroll-left {
+                left: 0;
+            }
+            
+            #scroll-right {
+                right: 0;
+                
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    
+    #caption-container {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        bottom: 0;
+        background-color: #4A4A4AC0;
+        padding: 0 30px;
+        
+        h3 {
+            color: white;
+            font-family: $mainFont;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+    }
+    
 }
 
 #image-viewer {

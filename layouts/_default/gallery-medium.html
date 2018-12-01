@@ -7,8 +7,8 @@
         <div class="gallery-artwork-col">
             <div class="gallery-artwork-category-container">
                 {{ $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.artworkImg) }}
-                {{ $resizedSmall := $resource.Resize "1200x" }}
-                <img id='image-{{ $.Scratch.Get "counter" }}' src="{{ $resizedSmall.Permalink }}" class="gallery-image">
+                {{ $resizedSmall := $resource.Resize "300x" }}
+                <img id='{{ $.Scratch.Get "counter" }}' src="{{ $resizedSmall.Permalink }}" class="gallery-image">
                 <div id='overlay-{{ $.Scratch.Get "counter" }}' class="overlay"></div>
                 <h3 id='title-{{ $.Scratch.Get "counter" }}'>{{ .Params.artworkTitle }}</h3>
     <!--            <h3 id='date-{{ $.Scratch.Get "counter" }}'>{{ .Params.artworkDate }}</h3>-->
@@ -19,6 +19,7 @@
 {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
 {{ end }}
     </div>
+<!--
     <div id="image-viewer">
         <div id="close-image-viewer">&times;</div>
         <div id="image-container">
@@ -34,7 +35,37 @@
         </div>
         <div id="caption-container">
             <h3 id="artwork-title">Title</h3>
-<!--            <h3 id="artwork-date">Date</h3>-->
+            <h3 id="artwork-date">Date</h3>
+            <h3 id="artwork-medium">Medium</h3>
+            <h3 id="artwork-size">Size</h3>
+        </div>
+    </div>
+-->
+
+    <div id="swipe-photo-gallery-container">
+        <div class="swipe-photo-gallery" id="swipe-photo-gallery-id">
+            {{ range where (.Pages.ByParam "order") "Params.type" "artwork" }}
+            {{- $resource := (.Site.GetPage "section" "uploads").Resources.GetMatch (strings.TrimPrefix "/uploads/" .Params.artworkImg) -}}
+            {{ $resizedSmall := $resource.Resize "1200x" }}
+            <img src="{{ $resizedSmall.Permalink }}">
+            {{ end }}
+        </div>
+        <div class="swipe-gallery-controls">
+            <div class="close-gallery">
+                <div class="close-gallery-cross cross-1"></div>
+                <div class="close-gallery-cross cross-2"></div>
+            </div>
+            <div class="slide-scroll-controls">
+                <div class="scroll-arrow" id="scroll-left">
+                    {{ partial "scroll.svg" }}
+                </div>
+                <div class="scroll-arrow" id="scroll-right">
+                    {{ partial "scroll.svg" }}
+                </div>
+            </div>
+        </div>
+        <div id="caption-container">
+            <h3 id="artwork-title">Title</h3>
             <h3 id="artwork-medium">Medium</h3>
             <h3 id="artwork-size">Size</h3>
         </div>
