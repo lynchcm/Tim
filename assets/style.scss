@@ -494,9 +494,17 @@ hr {
 }
 
 .gallery-medium-container {
-    padding: 0 20px;
+    padding: 0 20px 80px 20px;
     width: 100%;
     box-sizing: border-box;
+    
+    &:after { 
+       content: ""; 
+       visibility: hidden; 
+       display: block; 
+       height: 0; 
+       clear: both;
+    }
     
     .gallery-medium-div {
         float: left;
@@ -516,6 +524,8 @@ hr {
             border: 6px solid white;
             margin-bottom: 30px;
             max-width: 80%;
+            width: 80%;
+            max-width: 300px;
         }
         
         @media only screen and (min-width: $mobileMenuBreakpoint) {
@@ -979,7 +989,7 @@ form {
     
     p {
         display: block;
-        margin: 0;
+        margin: 20px 0;
         padding: 0;
         text-align: center;
         a {
