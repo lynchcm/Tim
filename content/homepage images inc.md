@@ -1,7 +1,7 @@
 +++
 homepageimg1 = "/uploads/IMG_2527.JPG"
-homepageimg2 = "/uploads/IMG_20180912_163244.jpg"
-homepageimg3 = "/uploads/IMG-20180909-WA0001.jpg"
+homepageimg2 = "/uploads/IMG_20181117_095921.jpg"
+homepageimg3 = "/uploads/IMG_20180901_103021.jpg"
 menuitem = false
 sitemap_exclude = true
 title = "Homepage Images"
