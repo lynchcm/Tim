@@ -47,6 +47,7 @@ fields:
   label: Exclude from sitemap
   name: sitemap_exclude
 pages:
+- content/gallery/board/rainster.md
 - content/gallery/board/bow-wood-series-5.md
 - content/gallery/board/art1.md
 - content/gallery/board/falling-into-autumn.md
