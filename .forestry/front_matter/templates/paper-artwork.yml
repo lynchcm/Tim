@@ -46,8 +46,8 @@ fields:
   default: true
 pages:
 - content/gallery/paper/summer-walk.md
-- content/gallery/paper/test.md
 - content/gallery/paper/Oak Haven.md
+- content/gallery/paper/test.md
 - content/gallery/paper/black-plantation.md
 - content/gallery/paper/first-fall.md
 - content/gallery/paper/woodland-forms.md
