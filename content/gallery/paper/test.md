@@ -1,6 +1,6 @@
 +++
 artworkDate = ""
-artworkImg = "/uploads/220px-Eenbruinigherfstblad.jpg"
+artworkImg = "/uploads/512137691.jpg"
 artworkMedium = "Paper"
 artworkSize = ""
 artworkTitle = ""
