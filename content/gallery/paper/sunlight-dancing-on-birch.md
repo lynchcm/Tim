@@ -5,6 +5,7 @@ artworkMedium = "Oil on Paper"
 artworkSize = "26 X 36 cm "
 artworkTitle = "Sunlight dancing on birch"
 date = "2018-12-03T21:19:19+00:00"
+draft = true
 order = 9
 sitemap_exclude = true
 title = "Sunlight dancing on birch"
