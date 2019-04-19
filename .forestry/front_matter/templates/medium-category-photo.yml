@@ -1,7 +1,6 @@
 ---
 label: Medium Category Photo
 hide_body: true
-is_partial: false
 fields:
 - type: text
   name: medium
@@ -26,6 +25,6 @@ fields:
   hidden: true
   default: true
 pages:
-- content/gallery/paper category photo inc.md
-- content/gallery/canvas category photo inc.md
 - content/gallery/board category photo inc.md
+- content/gallery/canvas category photo inc.md
+- content/gallery/paper category photo inc.md
