@@ -16,7 +16,7 @@ fields:
   label: Menu item
   hidden: true
 pages:
-- content/about/exhibitions inc.md
-- content/about/one man shows inc.md
-- content/about/awards inc.md
 - content/about/see tims work inc.md
+- content/about/awards inc.md
+- content/about/one man shows inc.md
+- content/about/exhibitions inc.md
