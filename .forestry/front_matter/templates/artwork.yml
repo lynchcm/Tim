@@ -46,6 +46,7 @@ fields:
   label: Exclude from sitemap
   name: sitemap_exclude
 pages:
+- content/gallery/board/Crossing point.md
 - content/gallery/board/bow-wood-series-3.md
 - content/gallery/board/bow-wood-series-2.md
 - content/gallery/board/bow-wood-series-5.md
