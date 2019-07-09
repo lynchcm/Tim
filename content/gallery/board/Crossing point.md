@@ -4,7 +4,6 @@ artworkImg = "/uploads/IMG_20190708_191110_925.jpg"
 artworkMedium = "Board"
 artworkSize = "29cm X 24cm"
 artworkTitle = "Crossing point"
-draft = true
 order = 1
 sitemap_exclude = true
 type = "artwork"
