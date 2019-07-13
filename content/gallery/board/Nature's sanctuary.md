@@ -4,7 +4,6 @@ artworkImg = "/uploads/IMG_20190605_162600.jpg"
 artworkMedium = "Board"
 artworkSize = "29cm X 29cm "
 artworkTitle = "Nature's sanctuary"
-draft = true
 order = 1
 sitemap_exclude = true
 type = "artwork"
