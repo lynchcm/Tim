@@ -4,7 +4,6 @@ artworkImg = "/uploads/IMG_20190713_123243.jpg"
 artworkMedium = "Paper"
 artworkSize = "25cm X 30cm"
 artworkTitle = "Lost in time"
-draft = true
 order = 4
 sitemap_exclude = true
 type = "artwork"
