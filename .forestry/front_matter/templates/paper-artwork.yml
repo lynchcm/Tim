@@ -44,6 +44,7 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/paper/Lost in time.md
 - content/gallery/paper/foliage.md
 - content/gallery/paper/frost-gives-way-to-blossom.md
 - content/gallery/paper/sunlight-dancing-on-birch.md
