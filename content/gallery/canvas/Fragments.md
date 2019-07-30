@@ -4,7 +4,6 @@ artworkImg = "/uploads/IMG_20190730_111840.jpg"
 artworkMedium = "Canvas"
 artworkSize = "61cm X 51cm"
 artworkTitle = "Fragments"
-draft = true
 order = 9
 sitemap_exclude = true
 type = "artwork"
