@@ -44,12 +44,12 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/canvas/blue-shadows.md
+- content/gallery/canvas/hawthorn.md
 - content/gallery/canvas/Fragments.md
 - content/gallery/canvas/spring-forms.md
-- content/gallery/canvas/hawthorn.md
 - content/gallery/canvas/blue-snow-black-rocks.md
 - content/gallery/canvas/spring-awakening.md
 - content/gallery/canvas/spring-equinox.md
 - content/gallery/canvas/serendipity.md
 - content/gallery/canvas/the-beginnings-of-spring.md
-- content/gallery/canvas/blue-shadows.md
