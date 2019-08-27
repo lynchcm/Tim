@@ -4,7 +4,6 @@ artworkImg = "/uploads/Fallen Beech "
 artworkMedium = "Paper"
 artworkSize = "50cm X 27cm"
 artworkTitle = "Fallen Beech"
-draft = true
 order = 12
 sitemap_exclude = true
 type = "artwork"
