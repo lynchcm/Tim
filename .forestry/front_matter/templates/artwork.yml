@@ -46,6 +46,7 @@ fields:
   label: Exclude from sitemap
   name: sitemap_exclude
 pages:
+- content/gallery/board/Dosraich.md
 - 'content/gallery/board/Rock forms #1.md'
 - content/gallery/board/Nature's sanctuary.md
 - content/gallery/board/Crossing point.md
