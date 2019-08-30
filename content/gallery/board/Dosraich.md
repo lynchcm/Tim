@@ -4,7 +4,6 @@ artworkImg = "/uploads/IMG_20190416_173138.jpg"
 artworkMedium = "Board"
 artworkSize = "25cm X 25cm"
 artworkTitle = "Dosraich"
-draft = true
 order = 13
 sitemap_exclude = true
 type = "artwork"
