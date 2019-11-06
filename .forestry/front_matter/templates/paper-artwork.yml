@@ -44,6 +44,7 @@ fields:
   hidden: true
   default: true
 pages:
+- content/gallery/paper/Memories of Chee dale.md
 - content/gallery/paper/Fallen Beech.md
 - content/gallery/paper/summer-walk.md
 - content/gallery/paper/first-fall.md
