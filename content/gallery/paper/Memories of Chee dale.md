@@ -4,7 +4,6 @@ artworkImg = "/uploads/IMG_20191106_115810.jpg"
 artworkMedium = "Paper"
 artworkSize = "25cm X 25cm "
 artworkTitle = "Memories of Chee dale"
-draft = true
 order = 1
 sitemap_exclude = true
 type = "artwork"
