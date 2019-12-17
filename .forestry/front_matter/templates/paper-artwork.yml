@@ -44,15 +44,15 @@ fields:
   hidden: true
   default: true
 pages:
-- content/gallery/paper/Memories of Chee dale.md
 - content/gallery/paper/Fallen Beech.md
-- content/gallery/paper/summer-walk.md
-- content/gallery/paper/first-fall.md
 - content/gallery/paper/Lost in time.md
-- content/gallery/paper/foliage.md
-- content/gallery/paper/sunlight-dancing-on-birch.md
-- content/gallery/paper/beyond-the-dove.md
-- content/gallery/paper/pinders-rock.md
-- content/gallery/paper/woodland-forms.md
-- content/gallery/paper/black-plantation.md
+- content/gallery/paper/Memories of Chee dale.md
 - content/gallery/paper/Oak Haven.md
+- content/gallery/paper/beyond-the-dove.md
+- content/gallery/paper/black-plantation.md
+- content/gallery/paper/first-fall.md
+- content/gallery/paper/foliage.md
+- content/gallery/paper/pinders-rock.md
+- content/gallery/paper/summer-walk.md
+- content/gallery/paper/sunlight-dancing-on-birch.md
+- content/gallery/paper/woodland-forms.md
