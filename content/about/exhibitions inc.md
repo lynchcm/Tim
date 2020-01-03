@@ -4,6 +4,8 @@ sitemap_exclude = true
 title = "exhibitions"
 
 +++
+2019 Winter exhibition  Old lock up gallery, Cromford 
+
 **2019** Wirksworth festival
 
 **2019** Derbyshire Open, Buxton
