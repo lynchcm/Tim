@@ -4,7 +4,7 @@ sitemap_exclude = true
 title = "exhibitions"
 
 +++
-2019 Winter exhibition  Old lock up gallery, Cromford 
+2019 Winter exhibition Tarpey Gallery 2019 Winter exhibition  Old lock up gallery, Cromford
 
 **2019** Wirksworth festival
 
